@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praveen Kumar | Ph.D. Scholar in Autonomous Robotics & AI | IIT Kanpur</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal webpage of Praveen Kumar, Ph.D. Scholar at IIT Kanpur specializing in Autonomous Mobile Robots, Intelligent Navigation, Computer Vision, SLAM, and Motion Planning.">
+  <meta name="keywords" content="Praveen Kumar, PraveenSingh24, IIT Kanpur, Autonomous Navigation, Mobile Robotics, SLAM, Computer Vision, Path Planning, NeuralPathLite, Deep Learning, ROS">
+  <meta name="author" content="Praveen Kumar">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Praveen Kumar | Ph.D. Researcher in Robotics & AI">
+  <meta property="og:description" content="Ph.D. Scholar at IIT Kanpur working on Autonomous Ground Vehicles, Visual Perception, SLAM, and Motion Planning.">
+  <meta property="og:image" content="profile.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD Structured Data for Academic Profile -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Praveen Kumar",
+    "jobTitle": "Ph.D. Scholar",
+    "worksFor": {
+      "@type": "EducationalOrganization",
+      "name": "Indian Institute of Technology Kanpur"
+    },
+    "almaMater": [
+      "Indian Institute of Technology Kanpur",
+      "National Institute of Technology Rourkela",
+      "Darbhanga College of Engineering"
+    ],
+    "sameAs": [
+      "https://github.com/PraveenSingh24",
+      "https://www.linkedin.com/in/praveen-singh-251421171",
+      "https://orcid.org/0000-0002-0684-4357"
+    ],
+    "knowsAbout": ["Autonomous Mobile Robots", "Intelligent Navigation", "Computer Vision", "Motion Planning", "SLAM", "Deep Learning"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-brand">
+        <i class="fa-solid fa-robot"></i> Praveen <span>Kumar</span>
+      </a>
+      
+      <div class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#seminar" class="nav-link">Seminar</a>
+        <a href="#demos" class="nav-link">Demos</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#teaching" class="nav-link">Teaching</a>
+        <a href="#service" class="nav-link">Peer Reviewing</a>
+        <a href="#awards" class="nav-link">Awards</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="section hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-graduation-cap"></i> FARE Fellow @ IITK | Seeking Postdoctoral & Faculty Roles
+          </div>
+          <h1 class="hero-title">Praveen <span class="gradient-text">Kumar</span></h1>
+          <h2 class="hero-subtitle">FARE Fellow | Ph.D. (Thesis Submitted) in Autonomous Robotics & AI</h2>
+          
+          <div class="hero-affiliation">
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Department of Electrical Engineering, <strong>IIT Kanpur</strong>, India</span>
+          </div>
+
+          <p class="hero-bio">
+            Pioneering robust navigation algorithms, visual perception pipelines, and deep learning architectures (Diffusion & LLM-Conditioned) for autonomous mobile robots operating in dynamic, complex environments.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="Seminar_Presentation.pdf" target="_blank" class="btn btn-primary">
+              <i class="fa-solid fa-file-powerpoint"></i> Open Seminar Slides
+            </a>
+            <a href="CV.pdf" target="_blank" class="btn btn-secondary">
+              <i class="fa-solid fa-file-arrow-down"></i> Download CV
+            </a>
+            <a href="#publications" class="btn btn-outline">
+              <i class="fa-solid fa-book-open"></i> Publications
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/PraveenSingh24" target="_blank" class="social-icon" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/praveen-singh-251421171" target="_blank" class="social-icon" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://orcid.org/0000-0002-0684-4357" target="_blank" class="social-icon" title="ORCID">
+              <i class="fa-brands fa-orcid"></i>
+            </a>
+            <a href="mailto:praveenk20iitk@gmail.com" class="social-icon" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-avatar-card">
+            <img src="profile.jpeg" alt="Praveen Kumar" class="hero-avatar-img">
+            <div class="hero-badge-float">
+              <i class="fa-solid fa-microchip"></i>
+              <div class="hero-badge-text">
+                <strong>FARE Fellow @ IITK</strong>
+                <span>Ph.D. Thesis Submitted</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-number" data-target="8">8+</div>
+          <div class="stat-label">Publications</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">FARE</div>
+          <div class="stat-label">Fellow @ IIT Kanpur</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="1200">$1,200</div>
+          <div class="stat-label">IEEE CIS Travel Award</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Submitted</div>
+          <div class="stat-label">Ph.D. Thesis</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Research Summary -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Research Summary & <span class="gradient-text">Focus Areas</span></h2>
+      </div>
+
+      <div class="research-grid">
+        <div class="research-card">
+          <div class="research-icon">
+            <i class="fa-solid fa-compass-drafting"></i>
+          </div>
+          <h3 class="research-card-title">Intelligent Path Planning</h3>
+          <p class="research-card-desc">
+            Designing vision-aided online A* and diffusion-based planner models (e.g., <em>NeuralPathLite</em>) for rapid, safe navigation of autonomous ground vehicles.
+          </p>
+        </div>
+
+        <div class="research-card">
+          <div class="research-icon">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3 class="research-card-title">Robot Perception & SLAM</h3>
+          <p class="research-card-desc">
+            Integrating LiDAR, V-SLAM, and RGB-D multi-sensor fusion pipelines for robust object recognition and semantic mapping in real-world outdoor terrain.
+          </p>
+        </div>
+
+        <div class="research-card">
+          <div class="research-icon">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <h3 class="research-card-title">LLM & Deep Learning</h3>
+          <p class="research-card-desc">
+            Pioneering Multi-Task Visual Perception Networks with Large Language Model (LLM) conditioning for context-aware autonomous navigation.
+          </p>
+        </div>
+
+        <div class="research-card">
+          <div class="research-icon">
+            <i class="fa-solid fa-car-side"></i>
+          </div>
+          <h3 class="research-card-title">Vehicle Dynamics & Control</h3>
+          <p class="research-card-desc">
+            Neural network-based path tracking and motion control for specialized platforms such as 4WIS4WID (4-Wheel Independent Steering & Drive) electric vehicles.
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- Ph.D. Open Seminar & Dissertation Section -->
+  <section class="section" id="seminar">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Ph.D. Dissertation Highlights</span>
+        <h2 class="section-title">Open Seminar <span class="gradient-text">Presentation</span></h2>
+      </div>
+
+      <div class="seminar-card">
+        <div class="seminar-badge-row">
+          <span class="seminar-badge"><i class="fa-solid fa-graduation-cap"></i> Ph.D. Dissertation Defense</span>
+          <span class="seminar-badge-secondary"><i class="fa-solid fa-calendar-day"></i> July 31, 2026</span>
+          <span class="seminar-badge-secondary"><i class="fa-solid fa-building-columns"></i> IIT Kanpur</span>
+        </div>
+
+        <h3 class="seminar-title">Towards Semantically-Aware Robot Navigation: From Geometric Maps to Vision-Text Models</h3>
+        
+        <p class="seminar-presenter">
+          <strong>Presenter:</strong> Praveen Kumar &nbsp;|&nbsp; <strong>Thesis Advisors:</strong> Dr. Tushar Sandhan & Dr. K. R. Guruprasad (Control & Automation, Dept. of Electrical Engineering, IIT Kanpur)
+        </p>
+
+        <p class="seminar-abstract">
+          This comprehensive open seminar presentation synthesizes the doctoral research contributions, addressing systemic bottlenecks of metric SLAM, semantic blindness in geometric maps, and classical path planning limitations. Features key breakthroughs in vision-aided context-aware A* planning, diffusion-based trajectory generation (<em>NeuralPathLite</em>), LLM-conditioned multi-task perception, and Vision-Text Navigation Models (VTMMap).
+        </p>
+
+        <div class="seminar-actions">
+          <a href="Seminar_Presentation.pdf" target="_blank" class="btn btn-primary">
+            <i class="fa-solid fa-file-powerpoint"></i> View Open Seminar Slides (PDF)
+          </a>
+          <a href="Seminar_Presentation.pdf" download="Praveen_Kumar_Open_Seminar_IITK.pdf" class="btn btn-secondary">
+            <i class="fa-solid fa-download"></i> Download Presentation (12 MB)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Demonstrations Section -->
+  <section class="section" id="demos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experimental Hardware & Simulation</span>
+        <h2 class="section-title">Research <span class="gradient-text">Demonstrations</span></h2>
+      </div>
+
+      <div class="demos-grid">
+        <!-- Demo 1: NeuralPathLite -->
+        <div class="demo-card">
+          <div class="demo-video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/ZN8gi2oB92U" title="NeuralPathLite Diffusion Path Planning Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="demo-card-body">
+            <div class="demo-badge-row">
+              <span class="demo-badge">IEEE T-ASE 2026</span>
+              <span class="demo-tag-sim">Diffusion Model</span>
+            </div>
+            <h3 class="demo-card-title">NeuralPathLite (NPLite) Path Planning</h3>
+            <p class="demo-card-desc">
+              Fast and robust diffusion-based path planning algorithm delivering real-time trajectory generation and smooth dynamic obstacle avoidance for autonomous ground vehicles.
+            </p>
+            <a href="https://www.youtube.com/watch?v=ZN8gi2oB92U" target="_blank" class="demo-link">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </div>
+
+        <!-- Demo 2: Vision-Language Navigation -->
+        <div class="demo-card">
+          <div class="demo-video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/4bPZ8skdwT4" title="Vision-Language Navigation Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="demo-card-body">
+            <div class="demo-badge-row">
+              <span class="demo-badge">IEEE WCCI / IJCNN 2026</span>
+              <span class="demo-tag-sim">Vision-Text Model</span>
+            </div>
+            <h3 class="demo-card-title">Vision-Language Navigation (VLN & VTMMap)</h3>
+            <p class="demo-card-desc">
+              Multi-task visual perception network conditioned on high-level LLM natural language instructions for zero-shot context adaptation in mobile robot navigation.
+            </p>
+            <a href="https://www.youtube.com/watch?v=4bPZ8skdwT4" target="_blank" class="demo-link">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </div>
+
+        <!-- Demo 3: Vision-Aided Online A* -->
+        <div class="demo-card">
+          <div class="demo-video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/HSfjuACaODo" title="Vision-Aided Online A* Path Planning Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="demo-card-body">
+            <div class="demo-badge-row">
+              <span class="demo-badge">Springer IJIRA 2026</span>
+              <span class="demo-tag-sim">Heuristic Planning</span>
+            </div>
+            <h3 class="demo-card-title">Vision-Aided Online A* Path Planning</h3>
+            <p class="demo-card-desc">
+              Vision-conditioned heuristic search algorithm dynamically pruning & adjusting search space based on live camera feeds for safe service robot navigation.
+            </p>
+            <a href="https://www.youtube.com/watch?v=HSfjuACaODo&t=2s" target="_blank" class="demo-link">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section class="section" id="publications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Scholarly Output</span>
+        <h2 class="section-title">Selected <span class="gradient-text">Publications</span></h2>
+      </div>
+
+      <div class="pub-controls">
+        <div class="pub-tabs">
+          <button class="pub-tab-btn active" data-filter="all">All (8)</button>
+          <button class="pub-tab-btn" data-filter="journal">Journals (2)</button>
+          <button class="pub-tab-btn" data-filter="conference">Conferences (6)</button>
+        </div>
+
+        <div class="pub-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="pub-search-input" placeholder="Search papers by keyword, venue, or year...">
+        </div>
+      </div>
+
+      <div class="pub-list" id="pub-list">
+        
+        <!-- Paper 1 -->
+        <div class="pub-card" data-category="journal" data-keywords="neuralpathlite path planning diffusion autonomous navigation tase ieee doi 10.1109/TASE.2026.3710089">
+          <div class="pub-header-line">
+            <span class="pub-type-badge pub-type-journal">Journal (IEEE T-ASE)</span>
+            <span class="pub-year">2026</span>
+          </div>
+          <h3 class="pub-title">NeuralPathLite: Fast and Robust Diffusion-Based Path Planning for Autonomous Navigation</h3>
+          <div class="pub-authors">
+            <strong>Praveen Kumar</strong>, Pratham Gupta, and Tushar Sandhan
+          </div>
+          <div class="pub-venue">IEEE Transactions on Automation Science and Engineering (T-ASE), vol. 23, pp. 12471–12485, 2026. DOI: 10.1109/TASE.2026.3710089</div>
+          <div class="pub-actions">
+            <button class="pub-btn toggle-abstract"><i class="fa-solid fa-circle-info"></i> Abstract</button>
+            <button class="pub-btn open-bibtex" data-bib="kumar2026neuralpathlite"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+            <a href="https://doi.org/10.1109/TASE.2026.3710089" target="_blank" class="pub-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1109/TASE.2026.3710089</a>
+          </div>
+          <div class="pub-abstract">
+            Presents NeuralPathLite, a lightweight diffusion-based path planning model designed for high-speed, dynamic obstacle avoidance in autonomous ground vehicles. Achieves state-of-the-art inference speed and trajectory smoothness compared to classical sampling-based planners.
+          </div>
+        </div>
+
+        <!-- Paper 2 -->
+        <div class="pub-card" data-category="journal" data-keywords="vision-aided online a* service robots path planning springer ijira doi 10.1007/s41315-026-00540-z">
+          <div class="pub-header-line">
+            <span class="pub-type-badge pub-type-journal">Journal (Springer Nature)</span>
+            <span class="pub-year">2026</span>
+          </div>
+          <h3 class="pub-title">Vision-Aided Online A* Path Planning for Efficient and Safe Navigation of Service Robots</h3>
+          <div class="pub-authors">
+            <strong>Praveen Kumar</strong> and Tushar Sandhan
+          </div>
+          <div class="pub-venue">International Journal of Intelligent Robotics and Applications, Springer Nature, 2026. DOI: 10.1007/s41315-026-00540-z</div>
+          <div class="pub-actions">
+            <button class="pub-btn toggle-abstract"><i class="fa-solid fa-circle-info"></i> Abstract</button>
+            <button class="pub-btn open-bibtex" data-bib="kumar2026vision"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+            <a href="https://doi.org/10.1007/s41315-026-00540-z" target="_blank" class="pub-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1007/s41315-026-00540-z</a>
+          </div>
+          <div class="pub-abstract">
+            Proposes an online vision-conditioned heuristic modification to the A* search algorithm, dynamically adjusting search space based on live camera feeds to ensure obstacle-free trajectories for indoor service robots.
+          </div>
+        </div>
+
+        <!-- Paper 3 -->
+        <div class="pub-card" data-category="conference" data-keywords="multi-task visual perception network llm conditioning wcci ijcnn 2026 ieee">
+          <div class="pub-header-line">
+            <span class="pub-type-badge pub-type-conf">Conference (IEEE WCCI / IJCNN)</span>
+            <span class="pub-year">2026</span>
+          </div>
+          <h3 class="pub-title">Multi-Task Visual Perception Network with LLM Conditioning for Autonomous Navigation</h3>
+          <div class="pub-authors">
+            <strong>Praveen Kumar</strong>, K.R. Guruprasad, and Tushar Sandhan
+          </div>
+          <div class="pub-venue">Proceedings of the 2026 International Joint Conference on Neural Networks (IJCNN), IEEE WCCI 2026, Maastricht, The Netherlands, June 21–26, 2026</div>
+          <div class="pub-actions">
+            <button class="pub-btn toggle-abstract"><i class="fa-solid fa-circle-info"></i> Abstract</button>
+            <button class="pub-btn open-bibtex" data-bib="kumar2026multitask"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+            <span class="pub-btn"><i class="fa-solid fa-award"></i> IEEE CIS Travel Grant Winner ($1200 USD)</span>
+          </div>
+          <div class="pub-abstract">
+            Introduces a novel multi-task vision encoder conditioned on high-level natural language instructions processed by LLMs, enabling zero-shot context adaptation for outdoor autonomous navigation.
+          </div>
+        </div>
+
+        <!-- Paper 4 -->
+        <div class="pub-card" data-category="conference" data-keywords="path-tracking control 4wis4wid electric vehicle direct inverse control artificial neural network icccnt ieee doi 10.1109/ICCCNT56998.2023.10306595">
+          <div class="pub-header-line">
+            <span class="pub-type-badge pub-type-conf">Conference (IEEE ICCCNT)</span>
+            <span class="pub-year">2023</span>
+          </div>
+          <h3 class="pub-title">Path-Tracking Control of the 4WIS4WID Electric Vehicle by Direct Inverse Control using Artificial Neural Network</h3>
+          <div class="pub-authors">
+            <strong>Praveen Kumar</strong> and Tushar Sandhan
+          </div>
+          <div class="pub-venue">2023 14th International Conference on Computing Communication and Networking Technologies (ICCCNT), Delhi, India, 2023, pp. 1–8. DOI: 10.1109/ICCCNT56998.2023.10306595</div>
+          <div class="pub-actions">
+            <button class="pub-btn toggle-abstract"><i class="fa-solid fa-circle-info"></i> Abstract</button>
+            <button class="pub-btn open-bibtex" data-bib="kumar2023pathtracking"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+            <a href="https://doi.org/10.1109/ICCCNT56998.2023.10306595" target="_blank" class="pub-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1109/ICCCNT56998.2023.10306595</a>
+          </div>
+          <div class="pub-abstract">
+            Develops an ANN direct inverse controller for 4-wheel independent steering and drive electric vehicles, offering precise path tracking and dynamic stability control on high-curvature routes.
+          </div>
+        </div>
+
+        <!-- Paper 5 -->
+        <div class="pub-card" data-category="conference" data-keywords="bellman-ford algorithm wireless sensor network k-medoid clustering springer icsiscet">
+          <div class="pub-header-line">
+            <span class="pub-type-badge pub-type-conf">Conference</span>
+            <span class="pub-year">2020</span>
+          </div>
+          <h3 class="pub-title">An Efficient Performance of Enhanced Bellman-Ford Algorithm in Wireless Sensor Network Using K-Medoid Clustering</h3>
+          <div class="pub-authors">
+            G. Sharma, <strong>Praveen Kumar</strong>, and L. Shrivastava
+          </div>
+          <div class="pub-venue">Springer International Conference on Smart Systems and Intelligent Computing (ICSISCET), 2020</div>
+          <div class="pub-actions">
+            <button class="pub-btn toggle-abstract"><i class="fa-solid fa-circle-info"></i> Abstract</button>
+            <button class="pub-btn open-bibtex" data-bib="sharma2020bellmanford"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+          </div>
+          <div class="pub-abstract">
+            Optimizes routing energy consumption in large-scale WSNs by combining K-Medoid clustering with a dynamic Bellman-Ford path refinement heuristic.
+          </div>
+        </div>
+
+        <!-- Paper 6 -->
+        <div class="pub-card" data-category="conference" data-keywords="autonomous vehicle power scavenging vehicular ad hoc network icicsc springer">
+          <div class="pub-header-line">
+            <span class="pub-type-badge pub-type-conf">Conference</span>
+            <span class="pub-year">2020</span>
+          </div>
+          <h3 class="pub-title">Autonomous Vehicle Power Scavenging Analysis for Vehicular Ad Hoc Network</h3>
+          <div class="pub-authors">
+            G. Sharma, <strong>Praveen Kumar Singh</strong>, and L. Shrivastava
+          </div>
+          <div class="pub-venue">International Conference on Intelligent Computing and Smart Communication (ICICSC), Springer, 2020</div>
+          <div class="pub-actions">
+            <button class="pub-btn toggle-abstract"><i class="fa-solid fa-circle-info"></i> Abstract</button>
+            <button class="pub-btn open-bibtex" data-bib="sharma2020powerscavenging"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+          </div>
+          <div class="pub-abstract">
+            Analyzes energy harvesting models for connected autonomous vehicles participating in inter-vehicle communication nodes.
+          </div>
+        </div>
+
+        <!-- Paper 7 -->
+        <div class="pub-card" data-category="conference" data-keywords="iot monitoring appliances smart home rteict ieee doi 10.1109/RTEICT.2016.7808011">
+          <div class="pub-header-line">
+            <span class="pub-type-badge pub-type-conf">Conference (IEEE RTEICT)</span>
+            <span class="pub-year">2016</span>
+          </div>
+          <h3 class="pub-title">IoT-Based Monitoring and Control of Appliances for Smart Home</h3>
+          <div class="pub-authors">
+            <strong>Praveen Kumar</strong> and U. C. Pati
+          </div>
+          <div class="pub-venue">IEEE International Conference on Recent Trends in Electronics, Information & Communication Technology (RTEICT), 2016. DOI: 10.1109/RTEICT.2016.7808011</div>
+          <div class="pub-actions">
+            <button class="pub-btn toggle-abstract"><i class="fa-solid fa-circle-info"></i> Abstract</button>
+            <button class="pub-btn open-bibtex" data-bib="kumar2016iot"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+            <a href="https://doi.org/10.1109/RTEICT.2016.7808011" target="_blank" class="pub-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1109/RTEICT.2016.7808011</a>
+          </div>
+          <div class="pub-abstract">
+            Presents an embedded IoT control framework for real-time energy telemetry and remote appliance automation.
+          </div>
+        </div>
+
+        <!-- Paper 8 -->
+        <div class="pub-card" data-category="conference" data-keywords="arduino raspberry pi smart home control ic-get ieee doi 10.1109/GET.2016.7916808">
+          <div class="pub-header-line">
+            <span class="pub-type-badge pub-type-conf">Conference (IEEE IC-GET)</span>
+            <span class="pub-year">2016</span>
+          </div>
+          <h3 class="pub-title">Arduino and Raspberry Pi-Based Smart Communication and Control of Home Appliance System</h3>
+          <div class="pub-authors">
+            <strong>Praveen Kumar</strong> and Umesh Chandra Pati
+          </div>
+          <div class="pub-venue">IEEE International Conference on Global Trends in Engineering & Technology (IC-GET), 2016. DOI: 10.1109/GET.2016.7916808</div>
+          <div class="pub-actions">
+            <button class="pub-btn toggle-abstract"><i class="fa-solid fa-circle-info"></i> Abstract</button>
+            <button class="pub-btn open-bibtex" data-bib="kumar2016arduino"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+            <a href="https://doi.org/10.1109/GET.2016.7916808" target="_blank" class="pub-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1109/GET.2016.7916808</a>
+          </div>
+          <div class="pub-abstract">
+            Implements a hybrid microcontroller-single-board computer architecture for distributed home automation.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Timelines -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Track Record</span>
+        <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+      </div>
+
+      <div class="timeline-grid">
+        <!-- Research Experience Column -->
+        <div class="timeline-column">
+          <h3 class="timeline-column-title"><i class="fa-solid fa-flask"></i> Research Experience</h3>
+          
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-date">Mar 2026 – Aug 2026</div>
+                <h4 class="timeline-role">Senior Student Research Associate</h4>
+                <div class="timeline-org">IIT Kanpur | PIs: Dr. Tushar Sandhan & Dr. K.R. Guruprasad</div>
+                <ul class="timeline-bullets">
+                  <li>Project: <em>Simultaneous Exploration and Coverage Using a Mobile Robot</em>.</li>
+                  <li>Developed autonomous exploration algorithms for mobile robots in unstructured terrain.</li>
+                  <li>Evaluated outdoor autonomous navigation performance & multi-robot path allocation modules.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-date">Nov 2023 – Dec 2023</div>
+                <h4 class="timeline-role">Student Research Associate</h4>
+                <div class="timeline-org">IIT Kanpur | PI: Dr. Nishchal K. Verma</div>
+                <ul class="timeline-bullets">
+                  <li>Project: <em>Complex Defense Object Recognition and Autonomous Handling</em>.</li>
+                  <li>Integrated LiDAR, V-SLAM, and ROS-based perception and sensor fusion pipelines.</li>
+                  <li>Conducted extensive outdoor robotic system testing for target classification.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="timeline-column">
+          <h3 class="timeline-column-title"><i class="fa-solid fa-graduation-cap"></i> Academic Education</h3>
+          
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-date">2020 – 2026</div>
+                <h4 class="timeline-role">Ph.D. in Electrical Engineering (Thesis Submitted)</h4>
+                <div class="timeline-org">Indian Institute of Technology Kanpur (IIT Kanpur)</div>
+                <ul class="timeline-bullets">
+                  <li><strong>Status</strong>: Ph.D. Thesis Submitted | <strong>FARE Fellow</strong> (Fellowship for Academic & Research Excellence).</li>
+                  <li>Research Area: Intelligent Autonomous Navigation & Motion Planning for Mobile Robots.</li>
+                  <li>Advisors: Dr. Tushar Sandhan & Dr. K. R. Guruprasad.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-date">2014 – 2016</div>
+                <h4 class="timeline-role">M.Tech. in Electronics & Instrumentation Engg.</h4>
+                <div class="timeline-org">National Institute of Technology Rourkela (NIT Rourkela)</div>
+                <ul class="timeline-bullets">
+                  <li><strong>CGPA: 8.76 / 10</strong></li>
+                  <li>Nominated for M.Tech Best Project Award.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-date">2009 – 2013</div>
+                <h4 class="timeline-role">B.Tech. in Electrical & Electronics Engg.</h4>
+                <div class="timeline-org">Darbhanga College of Engineering, Darbhanga</div>
+                <ul class="timeline-bullets">
+                  <li><strong>CGPA: 8.42 / 10</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaching Section -->
+  <section class="section" id="teaching">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Service</span>
+        <h2 class="section-title">Teaching & <span class="gradient-text">Mentorship</span></h2>
+      </div>
+
+      <div class="timeline-list">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2021 – Present</div>
+            <h4 class="timeline-role">Course Tutor @ IIT Kanpur</h4>
+            <div class="timeline-org">Indian Institute of Technology Kanpur</div>
+            <ul class="timeline-bullets">
+              <li><strong>Introduction to Python and Agentic AI (IS901E)</strong> – Post Graduate Program (PGP), IIT Kanpur.</li>
+              <li><strong>Introduction to Electronics (ESC201)</strong> – Dept. of Electrical Engineering, IIT Kanpur.</li>
+              <li><strong>Introduction to Electrical Engineering (ESO203)</strong> – Dept. of Electrical Engineering, IIT Kanpur.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2018 – 2020</div>
+            <h4 class="timeline-role">Assistant Professor (TEQIP-III)</h4>
+            <div class="timeline-org">Ministry of Education, Government of India</div>
+            <ul class="timeline-bullets">
+              <li>Delivered undergraduate lectures & labs in Electronics & Communication Engineering.</li>
+              <li>Mentored capstone student projects and led academic development initiatives.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2016 – 2018</div>
+            <h4 class="timeline-role">Lecturer</h4>
+            <div class="timeline-org">College of Engineering and Technology (CET), Bhubaneswar, India</div>
+            <ul class="timeline-bullets">
+              <li>Instructed core courses & practical lab modules in Instrumentation and Electronics Engineering.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Peer Reviewer & Editorial Service Section -->
+  <section class="section" id="service">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Editorial & Review Service</span>
+        <h2 class="section-title">Academic <span class="gradient-text">Peer Reviewer</span></h2>
+      </div>
+
+      <div class="reviewer-grid">
+        <div class="reviewer-card">
+          <div class="reviewer-badge"><i class="fa-solid fa-certificate"></i> Verified Reviewer</div>
+          <h3 class="reviewer-venue">IEEE ICRA</h3>
+          <p class="reviewer-name">IEEE International Conference on Robotics and Automation</p>
+        </div>
+
+        <div class="reviewer-card">
+          <div class="reviewer-badge"><i class="fa-solid fa-certificate"></i> Verified Reviewer</div>
+          <h3 class="reviewer-venue">IEEE T-ASE</h3>
+          <p class="reviewer-name">IEEE Transactions on Automation Science and Engineering</p>
+        </div>
+
+        <div class="reviewer-card">
+          <div class="reviewer-badge"><i class="fa-solid fa-certificate"></i> Verified Reviewer</div>
+          <h3 class="reviewer-venue">Springer Nature</h3>
+          <p class="reviewer-name">The Journal of Supercomputing</p>
+        </div>
+
+        <div class="reviewer-card">
+          <div class="reviewer-badge"><i class="fa-solid fa-certificate"></i> Verified Reviewer</div>
+          <h3 class="reviewer-venue">IEEE WCCI / IJCNN</h3>
+          <p class="reviewer-name">IEEE World Congress on Computational Intelligence / International Joint Conference on Neural Networks</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Competencies</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fa-solid fa-code"></i> Programming</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">Bash / Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fa-solid fa-gear"></i> Robotics Frameworks</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">ROS / ROS 2</span>
+            <span class="skill-tag">Gazebo</span>
+            <span class="skill-tag">RViz</span>
+            <span class="skill-tag">SLAM</span>
+            <span class="skill-tag">Path Planning</span>
+            <span class="skill-tag">LiDAR Processing</span>
+            <span class="skill-tag">RGB-D Sensing</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fa-solid fa-brain"></i> Computer Vision & AI</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">Semantic Segmentation</span>
+            <span class="skill-tag">Diffusion Models</span>
+            <span class="skill-tag">LLM Conditioning</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fa-solid fa-server"></i> Platforms & Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Ubuntu Linux</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">LaTeX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards & Honors -->
+  <section class="section" id="awards">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Awards & <span class="gradient-text">Honors</span></h2>
+      </div>
+
+      <div class="awards-grid">
+        <div class="award-card">
+          <div class="award-icon">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <div>
+            <h3 class="award-title">IEEE CIS Travel Grant ($1,200 USD)</h3>
+            <div class="award-detail">IEEE World Congress on Computational Intelligence (WCCI 2026), Maastricht, Netherlands</div>
+          </div>
+        </div>
+
+        <div class="award-card">
+          <div class="award-icon">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <div>
+            <h3 class="award-title">M.Tech Best Project Award Nomination</h3>
+            <div class="award-detail">National Institute of Technology Rourkela (NIT Rourkela)</div>
+          </div>
+        </div>
+
+        <div class="award-card">
+          <div class="award-icon">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <h3 class="award-title">GATE Qualified (EE & IN)</h3>
+            <div class="award-detail">Qualified Graduate Aptitude Test in Engineering across multiple competitive years</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- References Section -->
+  <section class="section" id="references">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Endorsements</span>
+        <h2 class="section-title">Professional <span class="gradient-text">References</span></h2>
+      </div>
+
+      <div class="ref-grid">
+        <div class="ref-card">
+          <div class="ref-avatar">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <div>
+            <h3 class="ref-name">Dr. Tushar Sandhan</h3>
+            <div class="ref-dept">Department of Electrical Engineering, IIT Kanpur</div>
+            <a href="mailto:sandhan@iitk.ac.in" class="ref-email"><i class="fa-solid fa-envelope"></i> sandhan@iitk.ac.in</a>
+          </div>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-avatar">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <div>
+            <h3 class="ref-name">Dr. K. R. Guruprasad</h3>
+            <div class="ref-dept">Department of Electrical Engineering, IIT Kanpur</div>
+            <a href="mailto:krgprao@iitk.ac.in" class="ref-email"><i class="fa-solid fa-envelope"></i> krgprao@iitk.ac.in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <h2 class="contact-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="contact-desc">
+          I am actively seeking Postdoctoral Fellowships, Academic Faculty positions, and Research Collaborations in Autonomous Robotics, Motion Planning, and Vision-Language Navigation. If you are interested in discussing potential opportunities, please feel free to reach out.
+        </p>
+
+        <div class="contact-cards">
+          <a href="mailto:praveenk20iitk@gmail.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>praveenk20iitk@gmail.com</span>
+          </a>
+          <a href="tel:+917683000930" class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 76830 00930</span>
+          </a>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Dept. of Electrical Engg., IIT Kanpur, India</span>
+          </div>
+        </div>
+
+        <div class="social-links" style="justify-content: center;">
+          <a href="https://github.com/PraveenSingh24" target="_blank" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/praveen-singh-251421171" target="_blank" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://orcid.org/0000-0002-0684-4357" target="_blank" class="social-icon" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
+          <a href="CV.pdf" target="_blank" class="social-icon" title="Download CV"><i class="fa-solid fa-file-pdf"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Praveen Kumar. Built for GitHub Pages hosting.</p>
+      <p style="font-size: 0.8rem; color: var(--text-muted);">Ph.D. Researcher | Autonomous Mobile Robotics | IIT Kanpur</p>
+    </div>
+  </footer>
+
+  <!-- Floating Scroll To Top Button -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- BibTeX Modal -->
+  <div class="modal-overlay" id="bibtex-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title"><i class="fa-solid fa-quote-right"></i> BibTeX Citation</h3>
+        <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <pre id="bibtex-code"></pre>
+        <button class="btn btn-primary" id="copy-bibtex-btn" style="width: 100%; justify-content: center;">
+          <i class="fa-solid fa-copy"></i> Copy BibTeX to Clipboard
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
