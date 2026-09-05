@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Praveen Kumar | Ph.D. Scholar in Autonomous Robotics & AI | IIT Kanpur</title>
+  <title>Dr. Praveen Kumar | Ph.D. Scholar in Autonomous Robotics & AI | IIT Kanpur</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Personal webpage of Praveen Kumar, Ph.D. Scholar at IIT Kanpur specializing in Autonomous Mobile Robots, Intelligent Navigation, Computer Vision, SLAM, and Motion Planning.">
+  <meta name="description" content="Personal academic webpage of Dr. Praveen Kumar, Ph.D. Scholar at IIT Kanpur specializing in Autonomous Mobile Robots, Intelligent Vehicles, SLAM, Computer Vision, and Motion Planning.">
   <meta name="keywords" content="Praveen Kumar, PraveenSingh24, IIT Kanpur, Autonomous Navigation, Mobile Robotics, SLAM, Computer Vision, Path Planning, NeuralPathLite, Deep Learning, ROS">
   <meta name="author" content="Praveen Kumar">
 
@@ -22,7 +22,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Merriweather:wght@400;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -36,7 +36,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Praveen Kumar",
-    "jobTitle": "Ph.D. Scholar",
+    "jobTitle": "Ph.D. Scholar & FARE Fellow",
     "worksFor": {
       "@type": "EducationalOrganization",
       "name": "Indian Institute of Technology Kanpur"
@@ -57,14 +57,21 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="#hero" class="nav-brand">
-        <i class="fa-solid fa-robot"></i> Praveen <span>Kumar</span>
+  <!-- Top Navbar Header -->
+  <header class="top-header">
+    <div class="header-container">
+      <!-- Left Logo -->
+      <a href="#profile" class="header-logo">
+        <div class="logo-mark">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">IIT Kanpur</span>
+        </div>
       </a>
       
-      <div class="nav-links" id="nav-links">
+      <!-- Navigation Links -->
+      <nav class="header-nav" id="nav-links">
         <a href="#about" class="nav-link">About</a>
         <a href="#research" class="nav-link">Research</a>
         <a href="#seminar" class="nav-link">Seminar</a>
@@ -72,112 +79,137 @@
         <a href="#publications" class="nav-link">Publications</a>
         <a href="#experience" class="nav-link">Experience</a>
         <a href="#teaching" class="nav-link">Teaching</a>
-        <a href="#service" class="nav-link">Peer Reviewing</a>
         <a href="#awards" class="nav-link">Awards</a>
         <a href="#contact" class="nav-link">Contact</a>
-      </div>
+      </nav>
 
-      <div class="nav-actions">
-        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
-          <i class="fa-solid fa-moon" id="theme-icon"></i>
+      <!-- Action Badges (Theme & Search) -->
+      <div class="header-actions">
+        <button class="lang-toggle-btn" id="theme-toggle" title="Toggle Light/Dark Theme">
+          <span class="lang-badge">EN</span>
+          <i class="fa-solid fa-sun" id="theme-icon"></i>
+        </button>
+        <button class="search-btn" id="search-trigger" title="Search Publications & Topics">
+          <i class="fa-solid fa-magnifying-glass"></i>
         </button>
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Menu">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="section hero-section" id="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <i class="fa-solid fa-graduation-cap"></i> FARE Fellow @ IITK | Seeking Postdoctoral & Faculty Roles
-          </div>
-          <h1 class="hero-title">Praveen <span class="gradient-text">Kumar</span></h1>
-          <h2 class="hero-subtitle">FARE Fellow | Ph.D. (Thesis Submitted) in Autonomous Robotics & AI</h2>
-          
-          <div class="hero-affiliation">
-            <i class="fa-solid fa-building-columns"></i>
-            <span>Department of Electrical Engineering, <strong>IIT Kanpur</strong>, India</span>
-          </div>
-
-          <p class="hero-bio">
-            Pioneering robust navigation algorithms, visual perception pipelines, and deep learning architectures (Diffusion & LLM-Conditioned) for autonomous mobile robots operating in dynamic, complex environments.
-          </p>
-
-          <div class="hero-ctas">
-            <a href="Seminar_Presentation.pdf" target="_blank" class="btn btn-primary">
-              <i class="fa-solid fa-file-powerpoint"></i> Open Seminar Slides
-            </a>
-            <a href="CV.pdf" target="_blank" class="btn btn-secondary">
-              <i class="fa-solid fa-file-arrow-down"></i> Download CV
-            </a>
-            <a href="#publications" class="btn btn-outline">
-              <i class="fa-solid fa-book-open"></i> Publications
-            </a>
-          </div>
-
-          <div class="social-links">
-            <a href="https://github.com/PraveenSingh24" target="_blank" class="social-icon" title="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/praveen-singh-251421171" target="_blank" class="social-icon" title="LinkedIn">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="https://orcid.org/0000-0002-0684-4357" target="_blank" class="social-icon" title="ORCID">
-              <i class="fa-brands fa-orcid"></i>
-            </a>
-            <a href="mailto:praveenk20iitk@gmail.com" class="social-icon" title="Email">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-image-wrapper">
-          <div class="hero-avatar-card">
-            <img src="profile.jpeg" alt="Praveen Kumar" class="hero-avatar-img">
-            <div class="hero-badge-float">
-              <i class="fa-solid fa-microchip"></i>
-              <div class="hero-badge-text">
-                <strong>FARE Fellow @ IITK</strong>
-                <span>Ph.D. Thesis Submitted</span>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- Hero Banner Area -->
+  <section class="banner-section" id="profile">
+    <div class="banner-bg-shapes">
+      <div class="bg-shape shape-1"></div>
+      <div class="bg-shape shape-2"></div>
+    </div>
+    <div class="banner-container">
+      <div class="banner-photo-wrapper">
+        <img src="profile.jpeg" alt="Dr. Praveen Kumar" class="banner-photo">
       </div>
-
-      <!-- Stats Bar -->
-      <div class="stats-bar">
-        <div class="stat-item">
-          <div class="stat-number" data-target="8">8+</div>
-          <div class="stat-label">Publications</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">FARE</div>
-          <div class="stat-label">Fellow @ IIT Kanpur</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number" data-target="1200">$1,200</div>
-          <div class="stat-label">IEEE CIS Travel Award</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">Submitted</div>
-          <div class="stat-label">Ph.D. Thesis</div>
-        </div>
-      </div>
+      <h1 class="banner-name">Praveen Kumar</h1>
     </div>
   </section>
 
-  <!-- About & Research Summary -->
-  <section class="section" id="about">
+  <!-- Main Profile & Sidebar Layout Section -->
+  <section class="profile-layout-section">
+    <div class="profile-layout-container">
+      
+      <!-- Left Main Column -->
+      <div class="profile-main-col">
+        <h2 class="profile-heading-name">Praveen Kumar</h2>
+        
+        <div class="profile-email-badge">
+          <a href="mailto:praveenk20iitk@gmail.com" class="email-circle-icon" title="Email Praveen Kumar">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+
+        <!-- Profile Blue Box -->
+        <div class="profile-teal-card" id="about">
+          <h3 class="profile-card-title">Profile</h3>
+          <div class="profile-card-body" id="profile-text-content">
+            <p>
+              Praveen Kumar is a FARE Fellow and Ph.D. Researcher in the <a href="#experience">Department of Electrical Engineering</a> at IIT Kanpur, India. His research interests are in the area of Autonomous Vehicle perception, dynamic SLAM, and vision-language motion planning, with a particular focus on scalability of learning and trajectory generation models (such as <a href="#demos">NeuralPathLite</a>).
+            </p>
+            <p>
+              Previously, Praveen earned his M.Tech. from National Institute of Technology Rourkela (NIT Rourkela) and B.Tech. from Darbhanga College of Engineering. He has published 8+ peer-reviewed papers in prestigious venues such as IEEE T-ASE, IEEE WCCI/IJCNN, and Springer IJIRA, and was awarded the IEEE CIS Travel Grant ($1,200 USD).
+            </p>
+            <div class="profile-card-more" id="profile-expanded-text">
+              <p>
+                His doctoral dissertation synthesized breakthroughs in vision-aided context-aware A* planning, diffusion-based trajectory generation, LLM-conditioned multi-task perception, and Vision-Text Navigation Models. He is actively seeking Postdoctoral and Assistant Professor roles in Autonomous Systems and Robotics.
+              </p>
+            </div>
+          </div>
+          <button class="profile-read-more-btn" id="read-more-btn">
+            READ MORE <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+
+        <!-- Expertise Section -->
+        <div class="expertise-section" id="research">
+          <h3 class="expertise-title">Expertise</h3>
+          <div class="expertise-tags-grid">
+            <a href="#publications" class="expertise-tag">Datasets</a>
+            <a href="#publications" class="expertise-tag">Data</a>
+            <a href="#demos" class="expertise-tag">Lidar</a>
+            <a href="#demos" class="expertise-tag">Cameras</a>
+            <a href="#research" class="expertise-tag">Detection</a>
+            <a href="#demos" class="expertise-tag">Model</a>
+            <a href="#research" class="expertise-tag">Vision</a>
+            <a href="#demos" class="expertise-tag">Images</a>
+            <a href="#demos" class="expertise-tag">Radar</a>
+            <a href="#research" class="expertise-tag">Autonomous Driving</a>
+            <a href="#research" class="expertise-tag">SLAM</a>
+            <a href="#demos" class="expertise-tag">Path Planning</a>
+            <a href="#demos" class="expertise-tag">Diffusion Models</a>
+            <a href="#skills" class="expertise-tag">ROS / ROS 2</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Sidebar Column -->
+      <aside class="profile-sidebar-col">
+        <div class="sidebar-buttons-group">
+          <a href="#experience" class="sidebar-btn-outline">Electrical Engineering</a>
+          <a href="#research" class="sidebar-btn-outline">Autonomous Robotics Lab</a>
+          <a href="#demos" class="sidebar-btn-outline">Intelligent Vehicles & AI</a>
+          <a href="CV.pdf" target="_blank" class="sidebar-btn-solid">Pure profile / Download CV</a>
+        </div>
+
+        <div class="sidebar-contact-card">
+          <h4 class="contact-card-heading">Contact</h4>
+          <div class="contact-details">
+            <p class="contact-email">
+              <a href="mailto:praveenk20iitk@gmail.com">praveenk20iitk@gmail.com</a>
+            </p>
+            <p class="contact-phone">+91 76830 00930</p>
+            <p class="contact-address">
+              Dept. of Electrical Engg.,<br>
+              IIT Kanpur, Uttar Pradesh, India 208016
+            </p>
+          </div>
+
+          <div class="contact-social-icons">
+            <a href="https://github.com/PraveenSingh24" target="_blank" class="sidebar-social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/praveen-singh-251421171" target="_blank" class="sidebar-social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://orcid.org/0000-0002-0684-4357" target="_blank" class="sidebar-social-link" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- Key Research Focus Areas -->
+  <section class="section section-light" id="focus-areas">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">About Me</span>
-        <h2 class="section-title">Research Summary & <span class="gradient-text">Focus Areas</span></h2>
+        <span class="section-tag">Core Specializations</span>
+        <h2 class="section-title">Research Summary & Focus Areas</h2>
       </div>
 
       <div class="research-grid">
@@ -222,12 +254,14 @@
         </div>
       </div>
     </div>
-  <!-- Ph.D. Open Seminar & Dissertation Section -->
+  </section>
+
+  <!-- Ph.D. Open Seminar Section -->
   <section class="section" id="seminar">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Ph.D. Dissertation Highlights</span>
-        <h2 class="section-title">Open Seminar <span class="gradient-text">Presentation</span></h2>
+        <h2 class="section-title">Open Seminar Presentation</h2>
       </div>
 
       <div class="seminar-card">
@@ -244,7 +278,7 @@
         </p>
 
         <p class="seminar-abstract">
-          This comprehensive open seminar presentation synthesizes the doctoral research contributions, addressing systemic bottlenecks of metric SLAM, semantic blindness in geometric maps, and classical path planning limitations. Features key breakthroughs in vision-aided context-aware A* planning, diffusion-based trajectory generation (<em>NeuralPathLite</em>), LLM-conditioned multi-task perception, and Vision-Text Navigation Models (VTMMap).
+          This comprehensive open seminar presentation synthesizes doctoral research contributions, addressing systemic bottlenecks of metric SLAM, semantic blindness in geometric maps, and classical path planning limitations. Features key breakthroughs in vision-aided context-aware A* planning, diffusion-based trajectory generation (<em>NeuralPathLite</em>), LLM-conditioned multi-task perception, and Vision-Text Navigation Models (VTMMap).
         </p>
 
         <div class="seminar-actions">
@@ -260,11 +294,11 @@
   </section>
 
   <!-- Research Demonstrations Section -->
-  <section class="section" id="demos">
+  <section class="section section-light" id="demos">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Experimental Hardware & Simulation</span>
-        <h2 class="section-title">Research <span class="gradient-text">Demonstrations</span></h2>
+        <h2 class="section-title">Research Demonstrations</h2>
       </div>
 
       <div class="demos-grid">
@@ -336,7 +370,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Scholarly Output</span>
-        <h2 class="section-title">Selected <span class="gradient-text">Publications</span></h2>
+        <h2 class="section-title">Selected Publications</h2>
       </div>
 
       <div class="pub-controls">
@@ -525,11 +559,11 @@
   </section>
 
   <!-- Experience & Education Timelines -->
-  <section class="section" id="experience">
+  <section class="section section-light" id="experience">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Track Record</span>
-        <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+        <h2 class="section-title">Experience & Education</h2>
       </div>
 
       <div class="timeline-grid">
@@ -622,7 +656,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Academic Service</span>
-        <h2 class="section-title">Teaching & <span class="gradient-text">Mentorship</span></h2>
+        <h2 class="section-title">Teaching & Mentorship</h2>
       </div>
 
       <div class="timeline-list">
@@ -669,11 +703,11 @@
   </section>
 
   <!-- Peer Reviewer & Editorial Service Section -->
-  <section class="section" id="service">
+  <section class="section section-light" id="service">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Editorial & Review Service</span>
-        <h2 class="section-title">Academic <span class="gradient-text">Peer Reviewer</span></h2>
+        <h2 class="section-title">Academic Peer Reviewer</h2>
       </div>
 
       <div class="reviewer-grid">
@@ -709,7 +743,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Competencies</span>
-        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <h2 class="section-title">Technical Skills</h2>
       </div>
 
       <div class="skills-grid">
@@ -763,11 +797,11 @@
   </section>
 
   <!-- Awards & Honors -->
-  <section class="section" id="awards">
+  <section class="section section-light" id="awards">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Recognition</span>
-        <h2 class="section-title">Awards & <span class="gradient-text">Honors</span></h2>
+        <h2 class="section-title">Awards & Honors</h2>
       </div>
 
       <div class="awards-grid">
@@ -809,7 +843,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Academic Endorsements</span>
-        <h2 class="section-title">Professional <span class="gradient-text">References</span></h2>
+        <h2 class="section-title">Professional References</h2>
       </div>
 
       <div class="ref-grid">
@@ -839,10 +873,10 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="section" id="contact">
+  <section class="section section-light" id="contact">
     <div class="container">
       <div class="contact-wrapper">
-        <h2 class="contact-title">Get In <span class="gradient-text">Touch</span></h2>
+        <h2 class="contact-title">Get In Touch</h2>
         <p class="contact-desc">
           I am actively seeking Postdoctoral Fellowships, Academic Faculty positions, and Research Collaborations in Autonomous Robotics, Motion Planning, and Vision-Language Navigation. If you are interested in discussing potential opportunities, please feel free to reach out.
         </p>
@@ -875,8 +909,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>© 2026 Praveen Kumar. Built for GitHub Pages hosting.</p>
-      <p style="font-size: 0.8rem; color: var(--text-muted);">Ph.D. Researcher | Autonomous Mobile Robotics | IIT Kanpur</p>
+      <p>© 2026 Dr. Praveen Kumar. Department of Electrical Engineering, IIT Kanpur.</p>
     </div>
   </footer>
 

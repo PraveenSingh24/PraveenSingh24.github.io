@@ -1,87 +1,122 @@
 /* ==========================================================================
-   Praveen Kumar - Interactive JavaScript Functionality
+   Dr. Praveen Kumar - Interactive JavaScript Functionality
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
 
   // ------------------------------------------------------------------------
-  // 1. Theme Toggle System (Dark/Light Mode)
+  // 1. Theme Toggle System (Defaulting to Light Mode to match TU Delft style)
   // ------------------------------------------------------------------------
   const themeToggle = document.getElementById('theme-toggle');
   const themeIcon = document.getElementById('theme-icon');
   const htmlElement = document.documentElement;
 
-  // Read saved theme or default to dark
-  const savedTheme = localStorage.getItem('theme') || 'dark';
+  // Read saved theme or default to light
+  const savedTheme = localStorage.getItem('theme') || 'light';
   htmlElement.setAttribute('data-theme', savedTheme);
   updateThemeIcon(savedTheme);
 
-  themeToggle.addEventListener('click', () => {
-    const currentTheme = htmlElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    htmlElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
-  });
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = htmlElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      htmlElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+  }
 
   function updateThemeIcon(theme) {
-    if (theme === 'dark') {
-      themeIcon.className = 'fa-solid fa-sun';
-    } else {
-      themeIcon.className = 'fa-solid fa-moon';
+    if (themeIcon) {
+      if (theme === 'dark') {
+        themeIcon.className = 'fa-solid fa-moon';
+      } else {
+        themeIcon.className = 'fa-solid fa-sun';
+      }
     }
   }
 
   // ------------------------------------------------------------------------
-  // 2. Mobile Menu Toggle
+  // 2. Profile Card "READ MORE" Toggle
+  // ------------------------------------------------------------------------
+  const readMoreBtn = document.getElementById('read-more-btn');
+  const expandedText = document.getElementById('profile-expanded-text');
+
+  if (readMoreBtn && expandedText) {
+    readMoreBtn.addEventListener('click', () => {
+      expandedText.classList.toggle('expanded');
+      if (expandedText.classList.contains('expanded')) {
+        readMoreBtn.innerHTML = 'SHOW LESS <i class="fa-solid fa-chevron-up"></i>';
+      } else {
+        readMoreBtn.innerHTML = 'READ MORE <i class="fa-solid fa-chevron-down"></i>';
+      }
+    });
+  }
+
+  // ------------------------------------------------------------------------
+  // 3. Search Button Trigger
+  // ------------------------------------------------------------------------
+  const searchTrigger = document.getElementById('search-trigger');
+  const searchInput = document.getElementById('pub-search-input');
+  const pubSection = document.getElementById('publications');
+
+  if (searchTrigger) {
+    searchTrigger.addEventListener('click', () => {
+      if (pubSection) {
+        pubSection.scrollIntoView({ behavior: 'smooth' });
+        if (searchInput) {
+          setTimeout(() => {
+            searchInput.focus();
+          }, 600);
+        }
+      }
+    });
+  }
+
+  // ------------------------------------------------------------------------
+  // 4. Mobile Menu Toggle
   // ------------------------------------------------------------------------
   const mobileToggle = document.getElementById('mobile-toggle');
   const navLinks = document.getElementById('nav-links');
 
-  mobileToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    const icon = mobileToggle.querySelector('i');
-    if (navLinks.classList.contains('active')) {
-      icon.className = 'fa-solid fa-xmark';
-    } else {
-      icon.className = 'fa-solid fa-bars';
-    }
-  });
-
-  // Close mobile menu when link clicked
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
-      mobileToggle.querySelector('i').className = 'fa-solid fa-bars';
+  if (mobileToggle && navLinks) {
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      const icon = mobileToggle.querySelector('i');
+      if (navLinks.classList.contains('active')) {
+        icon.className = 'fa-solid fa-xmark';
+      } else {
+        icon.className = 'fa-solid fa-bars';
+      }
     });
-  });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        const icon = mobileToggle.querySelector('i');
+        if (icon) icon.className = 'fa-solid fa-bars';
+      });
+    });
+  }
 
   // ------------------------------------------------------------------------
-  // 3. Navbar Active Link & Scroll Handling
+  // 5. Navbar Scroll & Active Link
   // ------------------------------------------------------------------------
-  const navbar = document.getElementById('navbar');
   const scrollTopBtn = document.getElementById('scroll-top');
   const sections = document.querySelectorAll('section[id]');
 
   window.addEventListener('scroll', () => {
-    // Sticky navbar shadow
-    if (window.scrollY > 50) {
-      navbar.style.boxShadow = 'var(--shadow-sm)';
-    } else {
-      navbar.style.boxShadow = 'none';
+    if (scrollTopBtn) {
+      if (window.scrollY > 400) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
     }
 
-    // Scroll to top button visibility
-    if (window.scrollY > 400) {
-      scrollTopBtn.classList.add('visible');
-    } else {
-      scrollTopBtn.classList.remove('visible');
-    }
-
-    // Active link highlighting
     let current = '';
     sections.forEach(section => {
-      const sectionTop = section.offsetTop - 100;
+      const sectionTop = section.offsetTop - 120;
       const sectionHeight = section.offsetHeight;
       if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
         current = section.getAttribute('id');
@@ -96,16 +131,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+  if (scrollTopBtn) {
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 
   // ------------------------------------------------------------------------
-  // 4. Publication Filtering & Real-time Search
+  // 6. Publication Filtering & Real-time Search
   // ------------------------------------------------------------------------
   const tabBtns = document.querySelectorAll('.pub-tab-btn');
   const pubCards = document.querySelectorAll('.pub-card');
-  const searchInput = document.getElementById('pub-search-input');
 
   let activeCategory = 'all';
   let searchQuery = '';
@@ -150,14 +186,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ------------------------------------------------------------------------
-  // 5. Abstract Toggle Expansion
+  // 7. Abstract Toggle Expansion
   // ------------------------------------------------------------------------
   document.querySelectorAll('.toggle-abstract').forEach(btn => {
     btn.addEventListener('click', () => {
       const pubCard = btn.closest('.pub-card');
       const abstractDiv = pubCard.querySelector('.pub-abstract');
-      abstractDiv.classList.toggle('open');
-      if (abstractDiv.classList.contains('open')) {
+      abstractDiv.classList.toggle('active');
+      if (abstractDiv.classList.contains('active')) {
         btn.innerHTML = '<i class="fa-solid fa-chevron-up"></i> Hide Abstract';
       } else {
         btn.innerHTML = '<i class="fa-solid fa-circle-info"></i> Abstract';
@@ -166,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ------------------------------------------------------------------------
-  // 6. BibTeX Citation Modal & Clipboard Copy
+  // 8. BibTeX Citation Modal & Clipboard Copy
   // ------------------------------------------------------------------------
   const bibtexDict = {
     "kumar2026neuralpathlite": `@article{kumar2026neuralpathlite,
@@ -244,14 +280,14 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       const bibKey = btn.getAttribute('data-bib');
       currentBibText = bibtexDict[bibKey] || "% Citation details available upon request.";
-      bibtexCode.textContent = currentBibText;
-      modal.classList.add('active');
+      if (bibtexCode) bibtexCode.textContent = currentBibText;
+      if (modal) modal.classList.add('active');
     });
   });
 
   if (modalClose) {
     modalClose.addEventListener('click', () => {
-      modal.classList.remove('active');
+      if (modal) modal.classList.remove('active');
     });
   }
 
@@ -267,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
     copyBtn.addEventListener('click', () => {
       navigator.clipboard.writeText(currentBibText).then(() => {
         showToast("BibTeX copied to clipboard!");
-        modal.classList.remove('active');
+        if (modal) modal.classList.remove('active');
       }).catch(err => {
         showToast("Copied text successfully!");
       });
@@ -275,11 +311,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function showToast(message) {
-    toast.textContent = message;
-    toast.classList.add('show');
-    setTimeout(() => {
-      toast.classList.remove('show');
-    }, 3000);
+    if (toast) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
   }
 
 });
